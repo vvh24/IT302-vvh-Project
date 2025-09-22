@@ -1,202 +1,275 @@
-[
-  {
-    "title": "Flatland",
-    "author": "Edwin Abbott Abbott",
-    "year": 1884,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10069547-L.jpg",
-    "key": "/works/OL118388W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+[{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638814"
   },
-  {
-    "title": "Phantastes",
-    "author": "George MacDonald",
-    "year": 1850,
-    "coverUrl": "https://covers.openlibrary.org/b/id/14358814-L.jpg",
-    "key": "/works/OL15450W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Flatland",
+  "author": "Edwin Abbott Abbott",
+  "year": 1884,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10069547-L.jpg",
+  "key": "/works/OL118388W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638815"
   },
-  {
-    "title": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "year": 1813,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10958340-L.jpg",
-    "key": "/works/OL149867W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Phantastes",
+  "author": "George MacDonald",
+  "year": 1850,
+  "coverUrl": "https://covers.openlibrary.org/b/id/14358814-L.jpg",
+  "key": "/works/OL15450W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638816"
   },
-  {
-    "title": "The Romance of the Forest",
-    "author": "Ann Radcliffe",
-    "year": 1791,
-    "coverUrl": "https://covers.openlibrary.org/b/id/8234152-L.jpg",
-    "key": "/works/OL153426W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "year": 1813,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10958340-L.jpg",
+  "key": "/works/OL149867W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638817"
   },
-  {
-    "title": "Jane Eyre",
-    "author": "Charlotte Brontë",
-    "year": 1847,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589963-L.jpg",
-    "key": "/works/OL54120W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "The Romance of the Forest",
+  "author": "Ann Radcliffe",
+  "year": 1791,
+  "coverUrl": "https://covers.openlibrary.org/b/id/8234152-L.jpg",
+  "key": "/works/OL153426W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638818"
   },
-  {
-    "title": "Wuthering Heights",
-    "author": "Emily Brontë",
-    "year": 1847,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10958341-L.jpg",
-    "key": "/works/OL72534W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "year": 1847,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589963-L.jpg",
+  "key": "/works/OL54120W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638819"
   },
-  {
-    "title": "Tess of the D’Urbervilles",
-    "author": "Thomas Hardy",
-    "year": 1891,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10958342-L.jpg",
-    "key": "/works/OL15312W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Wuthering Heights",
+  "author": "Emily Brontë",
+  "year": 1847,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10958341-L.jpg",
+  "key": "/works/OL72534W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63881a"
   },
-  {
-    "title": "Persuasion",
-    "author": "Jane Austen",
-    "year": 1817,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589961-L.jpg",
-    "key": "/works/OL149869W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Tess of the D’Urbervilles",
+  "author": "Thomas Hardy",
+  "year": 1891,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10958342-L.jpg",
+  "key": "/works/OL15312W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63881b"
   },
-  {
-    "title": "Northanger Abbey",
-    "author": "Jane Austen",
-    "year": 1818,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589962-L.jpg",
-    "key": "/works/OL149868W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Persuasion",
+  "author": "Jane Austen",
+  "year": 1817,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589961-L.jpg",
+  "key": "/works/OL149869W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63881c"
   },
-  {
-    "title": "Villette",
-    "author": "Charlotte Brontë",
-    "year": 1853,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10858900-L.jpg",
-    "key": "/works/OL26916W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Northanger Abbey",
+  "author": "Jane Austen",
+  "year": 1818,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589962-L.jpg",
+  "key": "/works/OL149868W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63881d"
   },
-  {
-    "title": "The Scarlet Letter",
-    "author": "Nathaniel Hawthorne",
-    "year": 1850,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589964-L.jpg",
-    "key": "/works/OL153528W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Villette",
+  "author": "Charlotte Brontë",
+  "year": 1853,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10858900-L.jpg",
+  "key": "/works/OL26916W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63881e"
   },
-  {
-    "title": "Lady Susan",
-    "author": "Jane Austen",
-    "year": 1871,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10688432-L.jpg",
-    "key": "/works/OL149870W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "The Scarlet Letter",
+  "author": "Nathaniel Hawthorne",
+  "year": 1850,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589964-L.jpg",
+  "key": "/works/OL153528W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63881f"
   },
-  {
-    "title": "Aurora Leigh",
-    "author": "Elizabeth Barrett Browning",
-    "year": 1856,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10958350-L.jpg",
-    "key": "/works/OL65074W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Lady Susan",
+  "author": "Jane Austen",
+  "year": 1871,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10688432-L.jpg",
+  "key": "/works/OL149870W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638820"
   },
-  {
-    "title": "Sense and Sensibility",
-    "author": "Jane Austen",
-    "year": 1811,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589965-L.jpg",
-    "key": "/works/OL149866W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Aurora Leigh",
+  "author": "Elizabeth Barrett Browning",
+  "year": 1856,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10958350-L.jpg",
+  "key": "/works/OL65074W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638821"
   },
-  {
-    "title": "Shirley",
-    "author": "Charlotte Brontë",
-    "year": 1849,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589966-L.jpg",
-    "key": "/works/OL54121W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Sense and Sensibility",
+  "author": "Jane Austen",
+  "year": 1811,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589965-L.jpg",
+  "key": "/works/OL149866W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638822"
   },
-  {
-    "title": "A Room with a View",
-    "author": "E. M. Forster",
-    "year": 1908,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589967-L.jpg",
-    "key": "/works/OL45579W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Shirley",
+  "author": "Charlotte Brontë",
+  "year": 1849,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589966-L.jpg",
+  "key": "/works/OL54121W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638823"
   },
-  {
-    "title": "Women in Love",
-    "author": "D. H. Lawrence",
-    "year": 1920,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589968-L.jpg",
-    "key": "/works/OL153439W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "A Room with a View",
+  "author": "E. M. Forster",
+  "year": 1908,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589967-L.jpg",
+  "key": "/works/OL45579W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638824"
   },
-  {
-    "title": "The Age of Innocence",
-    "author": "Edith Wharton",
-    "year": 1920,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589969-L.jpg",
-    "key": "/works/OL149846W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Women in Love",
+  "author": "D. H. Lawrence",
+  "year": 1920,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589968-L.jpg",
+  "key": "/works/OL153439W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638825"
   },
-  {
-    "title": "Women in White",
-    "author": "Wilkie Collins",
-    "year": 1859,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589970-L.jpg",
-    "key": "/works/OL153500W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "year": 1920,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589969-L.jpg",
+  "key": "/works/OL149846W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638826"
   },
-  {
-    "title": "The Tenant of Wildfell Hall",
-    "author": "Anne Brontë",
-    "year": 1848,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589971-L.jpg",
-    "key": "/works/OL20765W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Women in White",
+  "author": "Wilkie Collins",
+  "year": 1859,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589970-L.jpg",
+  "key": "/works/OL153500W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638827"
   },
-  {
-    "title": "Lady Audley’s Secret",
-    "author": "Mary Elizabeth Braddon",
-    "year": 1862,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589972-L.jpg",
-    "key": "/works/OL153497W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "The Tenant of Wildfell Hall",
+  "author": "Anne Brontë",
+  "year": 1848,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589971-L.jpg",
+  "key": "/works/OL20765W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638828"
   },
-  {
-    "title": "The Awakening",
-    "author": "Kate Chopin",
-    "year": 1899,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589973-L.jpg",
-    "key": "/works/OL21036W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Lady Audley’s Secret",
+  "author": "Mary Elizabeth Braddon",
+  "year": 1862,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589972-L.jpg",
+  "key": "/works/OL153497W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da638829"
   },
-  {
-    "title": "Madame Bovary",
-    "author": "Gustave Flaubert",
-    "year": 1856,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589974-L.jpg",
-    "key": "/works/OL26407W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "The Awakening",
+  "author": "Kate Chopin",
+  "year": 1899,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589973-L.jpg",
+  "key": "/works/OL21036W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63882a"
   },
-  {
-    "title": "Anna Karenina",
-    "author": "Leo Tolstoy",
-    "year": 1877,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589975-L.jpg",
-    "key": "/works/OL27685W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
+  "title": "Madame Bovary",
+  "author": "Gustave Flaubert",
+  "year": 1856,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589974-L.jpg",
+  "key": "/works/OL26407W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63882b"
   },
-  {
-    "title": "Evelina",
-    "author": "Frances Burney",
-    "year": 1778,
-    "coverUrl": "https://covers.openlibrary.org/b/id/10589976-L.jpg",
-    "key": "/works/OL153512W",
-    "lastUpdated": "2025-09-21T00:00:00Z"
-  }
-]
+  "title": "Anna Karenina",
+  "author": "Leo Tolstoy",
+  "year": 1877,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589975-L.jpg",
+  "key": "/works/OL27685W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "68d09245645ba8e7da63882c"
+  },
+  "title": "Evelina",
+  "author": "Frances Burney",
+  "year": 1778,
+  "coverUrl": "https://covers.openlibrary.org/b/id/10589976-L.jpg",
+  "key": "/works/OL153512W",
+  "lastUpdated": "2025-09-21T00:00:00Z"
+}]
