@@ -1,8 +1,8 @@
 /**
  * Name: Valeria Heredia
- * Date: September 29, 2025
+ * Date: October 26, 2025
  * Course: IT302 – 451
- * Assignment: Phase 2 Read MongoDB Data using Node.js Assignment
+ * Assignment: Phase 3 CUD MongoDB Data using Node.js Assignment
  * Email: vvh@njit.edu
  */
 let books

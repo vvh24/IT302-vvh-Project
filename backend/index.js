@@ -1,14 +1,15 @@
 /**
  * Name: Valeria Heredia
- * Date: September 29, 2025
+ * Date: October 26, 2025
  * Course: IT302 – 451
- * Assignment: Phase 2 Read MongoDB Data using Node.js Assignment
+ * Assignment: Phase 3 CUD MongoDB Data using Node.js Assignment
  * Email: vvh@njit.edu
  */
 import app from './server.js';
 import mongodb from "mongodb";
 import dotenv from "dotenv";
 import BooksDAO from './dao/booksDAO.js';
+import CommentsDAO from "./dao/commentsDAO.js";
 
 dotenv.config();
 const MongoClient = mongodb.MongoClient;
@@ -29,6 +30,7 @@ MongoClient.connect(
     })
     .then(async client => {
         await BooksDAO.injectDB(client);
+        await CommentsDAO.injectDB(client);
         app.listen(port, () => {
             console.log(`Server running on port ${port}`);
         });
