@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "68fe41f10a10b16fbb5f57f0"
+  },
+  "bookKey": "/works/OL149867W",
+  "text": "This was a beautiful read with strong characters.",
+  "userName": "Ana",
+  "userId": "ana456",
+  "lastModified": {
+    "$date": "2025-10-26T15:44:49.651Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fe420c0a10b16fbb5f57f1"
+  },
+  "bookKey": "/works/OL15437W",
+  "text": "Loved the pacing and the philosophy.",
+  "userName": "Valeria",
+  "userId": "vvh123",
+  "lastModified": {
+    "$date": "2025-10-26T15:45:16.459Z"
+  }
+}]
