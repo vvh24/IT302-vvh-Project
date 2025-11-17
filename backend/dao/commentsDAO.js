@@ -1,8 +1,8 @@
 /**
  * Name: Valeria Heredia
- * Date: October 26, 2025
+ * Date: November 16, 2025
  * Course: IT302 – 451
- * Assignment: Phase 3 CUD MongoDB Data using Node.js Assignment
+ * Assignment: Phase 4 Read Node.js Data using React.js Assignment
  * Email: vvh@njit.edu
  */
 import { ObjectId } from "mongodb";
@@ -59,6 +59,21 @@ export default class CommentsDAO {
     } catch (e) {
       console.error(`deleteComment error: ${e}`);
       return { error: e.message };
+    }
+  }
+  // GET
+  static async getComments(filters = {}) {
+    let query = {};
+    if (filters.bookKey) {
+      query.bookKey = filters.bookKey;
+    }
+    try {
+      const cursor = await comments.find(query);
+      const commentsList = await cursor.toArray();
+      return commentsList;
+    } catch (e) {
+      console.error(`Unable to get comments: ${e}`);
+      return [];
     }
   }
 }

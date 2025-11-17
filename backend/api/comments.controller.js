@@ -1,8 +1,8 @@
 /**
  * Name: Valeria Heredia
- * Date: October 26, 2025
+ * Date: November 16, 2025
  * Course: IT302 – 451
- * Assignment: Phase 3 CUD MongoDB Data using Node.js Assignment
+ * Assignment: Phase 4 Read Node.js Data using React.js Assignment
  * Email: vvh@njit.edu
  */
 import CommentsDAO from "../dao/commentsDAO.js";
@@ -44,7 +44,7 @@ export default class CommentsController {
   // DELETE 
   static async apiDeleteComment(req, res) {
     try {
-      const { commentId, userId } = req.body; 
+      const { commentId, userId } = req.body;
       if (!commentId || !userId) {
         return res.status(400).json({ error: "commentId and userId are required." });
       }
@@ -54,6 +54,21 @@ export default class CommentsController {
       return res.json({ status: "success" });
     } catch (e) {
       return res.status(500).json({ error: e.message });
+    }
+  }
+  // GET
+  static async apiGetComments(req, res, next) {
+    try {
+      const bookKey = req.query.bookKey; // e.g. "/works/OL149867W"
+      const filters = {};
+      if (bookKey) {
+        filters.bookKey = bookKey;
+      }
+      const commentsList = await CommentsDAO.getComments(filters);
+      res.json({ comments: commentsList });
+    } catch (e) {
+      console.error(`apiGetComments error: ${e}`);
+      res.status(500).json({ error: e.message });
     }
   }
 }
