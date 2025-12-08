@@ -1,8 +1,8 @@
 /**
  * Name: Valeria Heredia
- * Date: November 16, 2025
+ * Date: December 8, 2025
  * Course: IT302 – 451
- * Assignment: Phase 4 Read Node.js Data using React.js Assignment
+ * Assignment: Phase 5 CUD Node.js Data using React.js Assignment
  * Email: vvh@njit.edu
  */
 
@@ -21,10 +21,32 @@ class BooksDataService {
   get(id) {
     return axios.get(`${API_URL}/api/v1/vvh/books/id/${id}`);
   }
+  
   // GET comments for a book by its book key
   getComments(bookKey) {
     return axios.get(`${API_URL}/api/v1/vvh/comments`, {
       params: { bookKey }
+    });
+  }
+
+  // CREATE a new comment
+  createComment(data) {
+    // data should match what your backend expects:
+    // { bookKey, text, userName, userId }
+    return axios.post(`${API_URL}/api/v1/vvh/comments`, data);
+  }
+
+  // UPDATE an existing comment
+  updateComment(data) {
+    // data: { commentId, text, userId }
+    return axios.put(`${API_URL}/api/v1/vvh/comments`, data);
+  }
+
+  // DELETE a comment
+  deleteComment(commentId, userId) {
+    // Axios DELETE sends body via "data"
+    return axios.delete(`${API_URL}/api/v1/vvh/comments`, {
+      data: { commentId, userId },
     });
   }
 }

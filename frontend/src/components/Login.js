@@ -1,66 +1,77 @@
 /**
  * Name: Valeria Heredia
- * Date: November 16, 2025
+ * Date: December 8, 2025
  * Course: IT302 – 451
- * Assignment: Phase 4 Read Node.js Data using React.js Assignment
+ * Assignment: Phase 5 CUD Node.js Data using React.js Assignment
  * Email: vvh@njit.edu
  */
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Form, Button, Card, Alert } from "react-bootstrap";
 
-function Login({ setUser }) {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState(""); // fake password
+function Login({ onLogin }) {
+  const [name, setName] = useState("");
+  const [id, setId] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!username) {
-      alert("Please enter a username");
+    //validation so empty fields can't "log in"
+    if (!name.trim() || !id.trim()) {
+      setError("Please enter both a user name and a user id.");
       return;
     }
 
-    // Fake login — set user in parent component (can improver for nexr phase)
-    setUser({
-      name: username,
-      id: username.toLowerCase() + "123"
+    // Send user info up to App
+    onLogin({
+      name: name.trim(),
+      id: id.trim(),
     });
 
-    // Redirect to book list
+    setError("");
     navigate("/vvh_books");
   };
 
   return (
-    <div className="container mt-4" style={{ maxWidth: "400px" }}>
-      <h3 className="mb-3">Login</h3>
+    <div className="d-flex justify-content-center mt-4">
+      <Card style={{ maxWidth: "400px", width: "100%" }}>
+        <Card.Body>
+          <Card.Title className="mb-3 text-center">Login</Card.Title>
 
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label className="form-label">Username</label>
-          <input 
-            type="text"
-            className="form-control"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </div>
+          {error && <Alert variant="danger">{error}</Alert>}
 
-        <div className="mb-3">
-          <label className="form-label">Password</label>
-          <input 
-            type="password"
-            className="form-control"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3" controlId="loginName">
+              <Form.Label>User name</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter your Username"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </Form.Group>
 
-        <button type="submit" className="btn btn-primary w-100">
-          Login
-        </button>
-      </form>
+            <Form.Group className="mb-3" controlId="loginId">
+              <Form.Label>User id</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter your User ID"
+                value={id}
+                onChange={(e) => setId(e.target.value)}
+              />
+            </Form.Group>
+
+            <div className="d-grid">
+              <Button type="submit" variant="primary">
+                Login
+              </Button>
+            </div>
+          </Form>
+        </Card.Body>
+      </Card>
     </div>
   );
 }

@@ -1,76 +1,86 @@
 /**
  * Name: Valeria Heredia
- * Date: November 16, 2025
+ * Date: December 8, 2025
  * Course: IT302 – 451
- * Assignment: Phase 4 Read Node.js Data using React.js Assignment
+ * Assignment: Phase 5 CUD Node.js Data using React.js Assignment
  * Email: vvh@njit.edu
  */
 
 // src/App.js
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { Routes, Route, Link } from "react-router-dom";
+
 import BooksList from "./components/BooksList";
 import Book from "./components/Book";
 import Login from "./components/Login";
+import AddComment from "./components/AddComment";
 
 function App() {
   const [user, setUser] = useState(null);
 
-  const login = () => {
-    setUser({ name: "Valeria", id: "vvh123" });
-  };
+  // this gets passed into <Login />
+  const handleLogin = useCallback((userObj) => {
+    setUser(userObj);
+  }, []);
 
-  const logout = () => {
+  const handleLogout = () => {
     setUser(null);
   };
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light px-4 shadow-sm">
-        <Link to="/" className="navbar-brand fw-bold">
+      <nav className="navbar navbar-expand navbar-light bg-light px-3">
+        <Link to="/vvh_books" className="navbar-brand">
           VVH Books Gallery
         </Link>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <div className="navbar-nav">
+          <li className="nav-item">
+            <Link to="/vvh_books" className="nav-link">
+              Books
+            </Link>
+          </li>
+        </div>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-auto">
-            <li className="nav-item">
-              <Link to="/vvh_books" className="nav-link">
-                Books
-              </Link>
-            </li>
-          </ul>
-
-          {/* RIGHT SIDE LOGIN / LOGOUT */}
+        <div className="ms-auto d-flex align-items-center">
           {user ? (
-            <div className="d-flex align-items-center">
-              <span className="me-3">Hello, {user.name}</span>
-              <button className="btn btn-outline-danger btn-sm" onClick={logout}>
+            <>
+              <span className="me-3">
+                Logged in as <strong>{user.name}</strong> ({user.id})
+              </span>
+              <button
+                className="btn btn-outline-danger btn-sm"
+                onClick={handleLogout}
+              >
                 Logout
               </button>
-            </div>
+            </>
           ) : (
-            <Link to="/login" className="btn btn-primary btn-sm">
+            <Link to="/vvh_login" className="btn btn-outline-primary btn-sm">
               Login
             </Link>
           )}
         </div>
       </nav>
 
-      <div style={{ padding: "1rem" }}>
+      <div className="container mt-3">
         <Routes>
-          <Route path="/" element={<BooksList />} />
+          {/* list view */}
+          <Route path="/" element={<BooksList />} /> 
           <Route path="/vvh_books" element={<BooksList />} />
-          <Route path="/vvh_books/:id" element={<Book user={user} />} />
-          <Route path="/vvh_login" element={<Login setUser={setUser} />} />
+          
+          {/* single book detail */} 
+          <Route path="/vvh_books/:id" element={<Book user={user} />} /> 
+
+          <Route
+            path="/vvh_books/:id/comment"
+            element={<AddComment user={user} />} //add or edit comment
+          />
+
+          <Route
+            path="/vvh_login"
+            element={<Login onLogin={handleLogin} />} //login component
+          />
         </Routes>
       </div>
     </div>
