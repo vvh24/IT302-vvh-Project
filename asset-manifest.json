@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/vvh24/IT302-vvh-Project/static/css/main.3982bb5f.css",
-    "main.js": "/vvh24/IT302-vvh-Project/static/js/main.30a978c2.js",
+    "main.js": "/vvh24/IT302-vvh-Project/static/js/main.b9ca2207.js",
     "index.html": "/vvh24/IT302-vvh-Project/index.html",
     "main.3982bb5f.css.map": "/vvh24/IT302-vvh-Project/static/css/main.3982bb5f.css.map",
-    "main.30a978c2.js.map": "/vvh24/IT302-vvh-Project/static/js/main.30a978c2.js.map"
+    "main.b9ca2207.js.map": "/vvh24/IT302-vvh-Project/static/js/main.b9ca2207.js.map"
   },
   "entrypoints": [
     "static/css/main.3982bb5f.css",
-    "static/js/main.30a978c2.js"
+    "static/js/main.b9ca2207.js"
   ]
 }
